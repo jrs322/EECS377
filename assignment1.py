@@ -66,4 +66,9 @@ def loop():
         pi1.set_PWM_dutycycle(13,i)
         time.sleep(DELAY)
     pi1.write(26,0)
-    time.sleep(10)    
+    time.sleep(10)
+def main():
+    while True:
+        loop()
+if __name__ == "__main__":
+    main()
