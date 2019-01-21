@@ -16,6 +16,8 @@ Any/all of these compatibility notes should be considered temporary - a future v
 
 # [Syllabus](syllabus.md)
 
+# [Setting GitHub Permissions](Courseware/github_permissions/README.md)
+
 
 # [Chapter 1: Build a Raspberry Pi Controlled Desk Lamp](Courseware/01.md)
 
