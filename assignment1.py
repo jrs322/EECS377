@@ -25,7 +25,7 @@ def loop():
         pi1.set_PWM_dutycycle(19,i)
         time.sleep(DELAY)
     for j in range(100, 9, -1):
-        pi1.set_PWM_dutycycle(19 , i)
+        pi1.set_PWM_dutycycle(19 , j)
         time.sleep(DELAY)
     pi1.write(19,0)
     time.sleep(1)
@@ -36,7 +36,7 @@ def loop():
         pi1.set_PWM_dutycycle(13,i)
         time.sleep(DELAY)
     for j in range(100, 9, -1):
-        pi1.set_PWM_dutycycle(13 , i)
+        pi1.set_PWM_dutycycle(13 , j)
         time.sleep(DELAY)
     pi1.write(13,0)
     time.sleep(1)
