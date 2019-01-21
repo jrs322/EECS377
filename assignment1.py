@@ -47,25 +47,24 @@ def loop():
         pi1.set_PWM_dutycycle(26,i)
         time.sleep(DELAY)
     for j in range(100, 9, -1):
-        pi1.set_PWM_dutycycle(26 , i)
+        pi1.set_PWM_dutycycle(26 , j)
         time.sleep(DELAY)
     pi1.write(26,0)
     time.sleep(1)
     #begin ramping up the white led which is a mix of all
     pi1.write(26,1)
     pi1.write(19,1)
-    pi1.write(13,1)    
+    pi1.write(13,1)
     for i in range(9,100):
-        pi1.set_PWM_dutycycle(26,i)
-        pi1.set_PWM_dutycycle(19,i)
-        pi1.set_PWM_dutycycle(13,i)        
-        time.sleep(DELAY)
-    for j in range(100, 9, -1):
         pi1.set_PWM_dutycycle(26,i)
         pi1.set_PWM_dutycycle(19,i)
         pi1.set_PWM_dutycycle(13,i)
         time.sleep(DELAY)
-    pi1.write(26,0)
+    for j in range(100, 9, -1):
+        pi1.set_PWM_dutycycle(26,j)
+        pi1.set_PWM_dutycycle(19,j)
+        pi1.set_PWM_dutycycle(13,j)
+        time.sleep(DELAY)
     time.sleep(10)
 def main():
     while True:
